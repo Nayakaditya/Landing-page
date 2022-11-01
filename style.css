@@ -1,0 +1,248 @@
+body{
+    display: grid;
+    place-items: center;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(43, 135, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* main */
+
+main > div{
+    margin-top: 66px;
+}
+
+/* main ends */
+
+/* navbar starts */
+nav{
+    width: 100%;
+}
+
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar-brand i{
+    color: rgb(43, 135, 255);
+    font-size: 1.5em;
+}
+
+/* navbar ends */
+
+.mw-1260{
+    max-width: 1260px;
+}
+
+/* first carousel starts */
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height:  10px;
+}
+
+/* first carousel ends */
+
+/* explore-btn */
+.explore-btn-container{
+    display: grid;
+    place-items: center;
+}
+.explore-btn-container a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+}
+
+.explore-btn{
+    color: white;
+    width: 180px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background: rgb(43, 135, 255);
+}
+/* explore-btn ends */
+/* second carousel work here */
+.carousel-content-container, .travelling-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.c-inner-content{
+    width: 400px;
+    align-self: center;
+}
+/* second carousel work ends here */
+
+
+/* service cards section */
+#service-section, #contact{
+    color: white;
+    background-color: rgb(43, 135, 255);
+    margin-top: 65px;
+}
+.travelling-cards-container .individual-travelling-card-container{
+    
+    margin: 10px 10px;
+    max-width: 410px;
+    width: 33%;
+    height: auto;
+}
+
+/* .individual-travelling-card-container{
+} */
+
+.individual-travelling-card-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.service-text-1 details{
+    font-weight: 600;
+}
+
+.service-text-2{
+    font-weight: 400;
+}
+
+.service-text-2 h3{
+    /* color: rgb(93, 0, 255); */
+    font-weight: 500;
+}
+
+.service-text-2 ul li, .service-text-1 ul li{
+    color: rgb(215, 212, 212);
+    font-size: 1.2em;
+    line-height: 1.7rem;
+    list-style: none;
+}
+
+.service-text-1 ul li{
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* compnay logo section */
+#comp-log{
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.comp-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(222, 222, 222);
+}
+
+.comp-container > div{
+    width: 300px;
+}
+
+.comp-container div img{
+    cursor: pointer;
+    width: 100%;
+}
+/* company logo section ends */
+
+
+/* footer */
+
+#contact{
+    width: 100%;
+}
+
+.parent-contact-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.child-contact-container{
+    margin: 45px 20px;
+    padding: 20px;
+    width: 400px;
+    background: transparent;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.447);
+    border-radius: 15px;
+}
+.hr-line{
+    border-radius: 10px;
+    background-color: rgb(0, 255, 26);
+    width: 50%;
+    height: 4px;
+    margin-bottom: 20px;
+}
+
+.footer-form  div{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.footer-form input, .footer-form textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+}
+.footer-form button{
+    float: right;
+    padding: 8px 40px;
+}
+
+.social-icons-container a{
+    margin: 0 15px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+/* footer ends */
+/* media queries */
+@media (max-width: 576px){
+    details summary{
+        list-style: none;
+    }
+    details summary::after{
+        content: '\f101';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    .travelling-cards-container{
+        display: grid;
+        grid-template-columns: [first-col] 50% [last-col] 50% [end];
+        grid-template-rows: [first-row] 33% [mid-row] 33% [last-row] 33% [end];
+        place-items: center;
+    }
+    .travelling-cards-container .individual-travelling-card-container{
+        width: 180px;
+        height: auto;
+    }
+
+    .comp-container{
+        align-items: center;
+    }
+    .comp-container > div{
+        width: 180px;
+    }
+}
+@media (max-width: 930px){
+    .carousel-content-container > div{
+        margin: 10px;
+    }
+}
